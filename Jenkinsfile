@@ -1,12 +1,12 @@
-node{
+node('linux'){
 
-        stage('install'){
+        stage('Install'){
             sh 'npm install'
         }
-        stage('build'){
+        stage('Build'){
             sh 'npm run build'
         }
-        stage('test'){
+        stage('Test'){
             sh 'npm run test'
         }
 
